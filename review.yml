@@ -1,0 +1,72 @@
+name: Aijia Home Furnishing Products
+description: >-
+  Enrichment review for 艾佳生活 (Jiangsu Aijia Home Furnishing Products Co., Ltd.) — contract
+  discovery result and the reason no API contract is registered on this profile.
+url: https://raw.githubusercontent.com/api-evangelist/aijia-home-furnishing-products/refs/heads/main/review.yml
+created: '2026-09-14'
+modified: '2026-09-14'
+reviews:
+- date: '2026-09-14'
+  rating: 1
+  summary: >-
+    艾佳生活 is a Nanjing internet home-improvement platform selling packaged apartment
+    fit-outs to Chinese consumers through property-developer partnerships. It runs software —
+    a consumer website, a mobile site, a consumer app and a merchant/partner admin console —
+    but operates no developer program: there is no developer portal, no API reference, no SDK,
+    no Postman collection, no status page, no changelog and no published machine-readable
+    contract. open., developer. and docs.ihomefnt.com have no DNS record; there is no GitHub
+    organization (api.github.com/orgs/ihomefnt returns 404) and no package under the brand on
+    npm or PyPI. Every /.well-known/ path and /llms.txt on www. and m.ihomefnt.com returns
+    404, and most non-marketing paths on www.ihomefnt.com fall through to a Vue admin shell
+    titled 艾佳生活商户服务平台 (merchant service platform) — a 1,392-byte login SPA, i.e. a
+    soft-404 for anything that is not the marketing site or /aboutus/. Two real pages carry
+    the company's public content: https://www.ihomefnt.com/ and https://www.ihomefnt.com/aboutus/.
+  endpoints:
+  - url: https://www.ihomefnt.com/
+    status: 200
+  - url: https://www.ihomefnt.com/aboutus/
+    status: 200
+  - url: https://m.ihomefnt.com/allhome/allhomeindex
+    status: 200
+  - url: https://www.ihomefnt.com/openapi.json
+    status: 404
+  - url: https://www.ihomefnt.com/llms.txt
+    status: 404
+  - url: https://www.ihomefnt.com/.well-known/agent-card.json
+    status: 404
+  - url: https://m.ihomefnt.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.github.com/orgs/ihomefnt
+    status: 404
+  - url: https://ihomefnt.com/
+    status: 200
+    note: >-
+      The apex does not serve the company — it redirects to vr.3d66.com, an unrelated
+      third-party VR panorama product. Only the www. and m. hosts are the company's.
+  contract_decision:
+    registered_contract: false
+    finding: >-
+      An application-framework default documentation endpoint answers unauthenticated on the
+      company's app back-end host and returns a large machine-readable description of an
+      internal back-office service (account, CRM and supplier-bidding operations). It was NOT
+      harvested, NOT saved to openapi/, NOT registered in apis.yml, and nothing was derived
+      from it.
+    reasons:
+    - >-
+      That host's own robots.txt disallows every automated client from every path, and this
+      pipeline honors robots.
+    - The document declares its service host as an internal operations domain that has no
+      public DNS record, so the contract describes an internal system rather than a product
+      offered to third parties.
+    - It is a framework default left enabled in production, not a published developer
+      contract — there is no portal, key issuance, terms, or reference anywhere that offers
+      this API to anyone outside the company.
+    - Republishing an internal back-office operation map would be a reconnaissance document,
+      not an API profile. API Evangelist profiles what a company publishes for public use.
+    pii_check: >-
+      The document was scanned before the decision and contained no personal data — no
+      e-mail addresses, Chinese mobile numbers, national ID numbers, tokens or keys. The
+      decision not to publish is about the surface it maps, not about leaked PII.
+    follow_up: >-
+      Candidate for a courtesy notice to the company: most operators do not know a framework
+      documentation endpoint is reachable from the public internet.

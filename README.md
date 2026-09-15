@@ -64,5 +64,23 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aijia Home Furnishing Products is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/aijia-home-furnishing-products-stock
+Aijia Home Furnishing Products (艾佳生活, operated by 江苏艾佳家居用品有限公司 / Jiangsu Aijia Home
+Furnishing Products Co., Ltd.) is a Nanjing-based Chinese internet home-furnishing and
+home-improvement platform, founded in 2015 as a joint venture of Jiangsu Yide Group and Central
+China (Jianye) Group. It sells a one-stop packaged fit-out for newly delivered apartments —
+design, hard decoration, soft furnishing, construction, acceptance, delivery and after-sales —
+through partnerships with property developers across 25 Chinese provinces and more than 500
+residential projects. It raised a RMB 1 billion Series B led by Tiantu Capital in 2018 at a
+valuation above USD 1 billion, and launched Dramatic Reality (DR), an AI design platform for
+interior designers, in 2019.
+
+**No developer program.** The company publishes no developer portal, no API reference, no SDK and
+no machine-readable API contract. See
+[`review.yml`](review.yml) for the contract-discovery record and
+[`well-known/`](well-known/aijia-home-furnishing-products-well-known.yml) for every discovery path
+probed and the status it returned.
+
+- Website: https://www.ihomefnt.com/
+- About: https://www.ihomefnt.com/aboutus/
+- Mobile site: https://m.ihomefnt.com/allhome/allhomeindex
+- Secondary-market listing: https://www.hiive.com/securities/aijia-home-furnishing-products-stock

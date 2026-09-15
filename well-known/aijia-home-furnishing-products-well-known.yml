@@ -1,0 +1,143 @@
+generated: '2026-09-14'
+method: probed
+source: live unauthenticated GET probes of every host this record knows
+name: Aijia Home Furnishing Products well-known discovery probe
+description: >-
+  艾佳生活 (ihomefnt.com) publishes no well-known discovery document on any host reachable
+  from this record. The corporate site www.ihomefnt.com answers every /.well-known/ path with
+  a Spring Boot JSON 404 envelope ({"status":404,"error":"Not Found","path":"/pc-web/..."}),
+  and the mobile site m.ihomefnt.com answers with either an nginx 404 page or the Next.js
+  "404: This page could not be found" shell. The apex ihomefnt.com does not serve the company
+  at all — it 301/302s to an unrelated third-party VR panorama product (vr.3d66.com), so it is
+  recorded here as a redirect rather than probed as a company host. No path returned a real
+  document, so no raw file was saved and NO WellKnown or SecurityTxt pointer is emitted in
+  apis.yml.
+hosts:
+- host: www.ihomefnt.com
+  note: >-
+    Chinese-language consumer website, behind Huawei CloudWAF. Every well-known path returns a
+    Spring Boot JSON 404 envelope from the /pc-web application. The WAF intermittently answers
+    an unrelated 302 for any path; probes were repeated until a stable status was observed.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    content_type: application/json
+    real_document: false
+    result: miss
+  - path: /.well-known/openid-configuration
+    status: 404
+    content_type: application/json
+    real_document: false
+    result: miss
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    content_type: application/json
+    real_document: false
+    result: miss
+  - path: /.well-known/api-catalog
+    status: 404
+    content_type: application/json
+    real_document: false
+    result: miss
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    content_type: application/json
+    real_document: false
+    result: miss
+  - path: /.well-known/agent-card.json
+    status: 404
+    content_type: application/json
+    real_document: false
+    result: miss
+  - path: /.well-known/agent.json
+    status: 404
+    content_type: application/json
+    real_document: false
+    result: miss
+- host: m.ihomefnt.com
+  note: >-
+    Mobile consumer site (Next.js front end over the same WAF). Legacy paths return a 564-byte
+    nginx 404; app paths return the 3,251-byte Next.js 404 shell. Neither is a document.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    content_type: text/html
+    real_document: false
+    result: miss
+  - path: /.well-known/openid-configuration
+    status: 404
+    content_type: text/html
+    real_document: false
+    result: miss
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    content_type: text/html
+    real_document: false
+    result: miss
+  - path: /.well-known/api-catalog
+    status: 404
+    content_type: text/html
+    real_document: false
+    result: miss
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    content_type: text/html
+    real_document: false
+    result: miss
+  - path: /.well-known/agent-card.json
+    status: 404
+    content_type: text/html
+    real_document: false
+    result: miss
+  - path: /.well-known/agent.json
+    status: 404
+    content_type: text/html
+    real_document: false
+    result: miss
+hosts_not_probed:
+- host: ihomefnt.com
+  reason: >-
+    The apex does not serve the company — it redirects to vr.3d66.com, a third-party VR
+    panorama product. Probing it would measure someone else's host.
+  evidence:
+    url: https://ihomefnt.com/
+    status: 200
+    final_url: https://vr.3d66.com/next/
+- host: api.ihomefnt.com
+  reason: >-
+    The mobile/app back-end host. Its own robots.txt disallows every automated client from
+    every path, so we honor that — nothing on it was harvested, saved, or registered as a
+    contract. See review.yml.
+  evidence:
+    url: https://api.ihomefnt.com/robots.txt
+    status: 200
+non_well_known_probes:
+  note: >-
+    STEP 0b contract-discovery probes recorded for completeness. No published spec exists:
+    open., developer. and docs.ihomefnt.com have no DNS record at all, and the company runs no
+    GitHub organization (api.github.com/orgs/ihomefnt -> 404) and no npm/PyPI package under
+    its brand.
+  probes:
+  - url: https://www.ihomefnt.com/openapi.json
+    status: 404
+  - url: https://www.ihomefnt.com/swagger.json
+    status: 404
+  - url: https://www.ihomefnt.com/llms.txt
+    status: 404
+  - url: https://www.ihomefnt.com/robots.txt
+    status: 200
+    note: Two lines allowing all agents everywhere. No sitemap and no spec reference.
+  - url: https://m.ihomefnt.com/llms.txt
+    status: 404
+  - url: https://api.github.com/orgs/ihomefnt
+    status: 404
+  - url: https://registry.npmjs.org/-/v1/search?text=ihomefnt
+    status: 200
+    note: Zero packages. PyPI has no ihomefnt project either (404).
+  dns:
+  - host: open.ihomefnt.com
+    result: NXDOMAIN
+  - host: developer.ihomefnt.com
+    result: NXDOMAIN
+  - host: docs.ihomefnt.com
+    result: NXDOMAIN

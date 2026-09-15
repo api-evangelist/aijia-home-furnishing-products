@@ -1,0 +1,19 @@
+generated: '2026-09-14'
+method: searched
+source: https://www.ihomefnt.com/
+name: Aijia Home Furnishing Products API rate limits
+limit_count: 0
+rate_limits: []
+headers: []
+note: >-
+  No rate limits are published because no API is published. 艾佳生活 has no developer portal,
+  no API reference and no published machine-readable contract (see
+  well-known/aijia-home-furnishing-products-well-known.yml for the full probe record). No
+  X-RateLimit-*, RateLimit-* or Retry-After header was observed on any unauthenticated
+  response from www.ihomefnt.com or m.ihomefnt.com, and no documentation anywhere on either
+  site states a request quota, burst or 429 behaviour.
+searched:
+- url: https://www.ihomefnt.com/
+  status: 200
+- url: https://m.ihomefnt.com/allhome/allhomeindex
+  status: 200

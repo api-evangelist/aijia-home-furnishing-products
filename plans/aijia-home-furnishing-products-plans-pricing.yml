@@ -1,0 +1,22 @@
+generated: '2026-09-14'
+method: searched
+source: https://www.ihomefnt.com/
+name: Aijia Home Furnishing Products API plans and pricing
+plan_count: 0
+plans: []
+note: >-
+  艾佳生活 publishes no API plans, because it publishes no API. There is no developer portal,
+  no API pricing page and no "apply for API access" or partner-integration page anywhere on
+  www.ihomefnt.com or m.ihomefnt.com (searched 2026-09-14; both sites are Chinese-language
+  only). The company's commercial surface is retail: packaged apartment fit-outs and the 全品家
+  furniture suites sold to consumers, plus a login-only merchant/partner console
+  (艾佳生活商户服务平台). Retail package prices quoted on the consumer site are home-furnishing
+  product prices, not API plans, and are deliberately not recorded here as plans.
+searched:
+- url: https://www.ihomefnt.com/
+  status: 200
+- url: https://www.ihomefnt.com/aboutus/
+  status: 200
+- url: https://m.ihomefnt.com/allhome/allhomeindex
+  status: 200
+  note: 全品家 product/suite catalog — retail furniture packages, no API tiers.

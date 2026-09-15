@@ -1,0 +1,59 @@
+# Aijia Home Furnishing Products (艾佳生活)
+
+> 艾佳生活 — operated by 江苏艾佳家居用品有限公司 (Jiangsu Aijia Home Furnishing Products Co., Ltd.),
+> Nanjing, China — is an internet home-furnishing and home-improvement platform founded in 2015 as a
+> joint venture of Jiangsu Yide Group and Central China (Jianye) Group. It sells a one-stop packaged
+> fit-out for newly delivered apartments — design, hard decoration, soft furnishing, construction,
+> acceptance, delivery and after-sales — through partnerships with property developers across 25
+> Chinese provinces and 500-plus residential projects. It raised a RMB 1 billion Series B led by
+> Tiantu Capital in 2018 at a valuation above USD 1 billion and launched Dramatic Reality (DR), an AI
+> design platform for interior designers, in 2019.
+
+<!--
+generated: '2026-09-14'
+method: generated
+source: apis.yml + repo artifacts (API Evangelist enrichment pipeline)
+note: 艾佳生活 does not publish an llms.txt. https://www.ihomefnt.com/llms.txt and
+      https://m.ihomefnt.com/llms.txt both returned 404 on 2026-09-14. This file is an API
+      Evangelist third-party index of the company's public surface, not a document served by
+      the company.
+-->
+
+## APIs
+
+艾佳生活 publishes no public API, no developer portal, no SDK and no machine-readable API contract.
+Probed 2026-09-14: `open.`, `developer.` and `docs.ihomefnt.com` have no DNS record;
+`/openapi.json`, `/swagger.json`, `/llms.txt` and every `/.well-known/` path on `www.ihomefnt.com`
+and `m.ihomefnt.com` returned 404; there is no GitHub organization (`api.github.com/orgs/ihomefnt`
+returns 404) and no npm or PyPI package under the brand. Most non-marketing paths on
+`www.ihomefnt.com` fall through to a login-only Vue admin shell titled 艾佳生活商户服务平台
+(merchant service platform), so a 200 on such a path is a soft-404, not a page.
+
+## Company
+
+- [艾佳生活](https://www.ihomefnt.com/): Company website (Chinese) — 全品家 furniture suites, case
+  galleries by room, decoration guides
+- [关于我们](https://www.ihomefnt.com/aboutus/): About — brand story, company profile, scale, and a
+  dated milestone timeline from 2014 through 2022
+- [艾佳生活移动站](https://m.ihomefnt.com/allhome/allhomeindex): Mobile site — 全品家 packages and
+  product catalog
+- [晒家](https://m.ihomefnt.com/inspiration): Customer home galleries on the mobile site
+- Customer hotline: 400-8009-360 — Headquarters: 025-85927816 (Nanjing)
+- ICP filing: 苏ICP备15002464号-1
+- Secondary-market listing: [Hiive](https://www.hiive.com/securities/aijia-home-furnishing-products-stock)
+
+## Business
+
+- One-stop packaged apartment fit-out (毛坯 + 硬装 + 软装) sold through property-developer partnerships
+- 全品家 branded furniture and furnishing suites, sold as room-by-room and whole-home packages
+- Dramatic Reality (DR), an AI design platform for interior designers, launched 2019
+- Merchant/partner console (艾佳生活商户服务平台) — login only, no public documentation
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/aijia-home-furnishing-products/refs/heads/main/apis.yml): APIs.json/apis.yml record for Aijia Home Furnishing Products
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/aijia-home-furnishing-products/refs/heads/main/well-known/aijia-home-furnishing-products-well-known.yml): Every discovery path probed, with the status it returned
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/aijia-home-furnishing-products/refs/heads/main/security/aijia-home-furnishing-products-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture
+- [Plans](https://raw.githubusercontent.com/api-evangelist/aijia-home-furnishing-products/refs/heads/main/plans/aijia-home-furnishing-products-plans-pricing.yml): API plan measurement (zero — no developer program)
+- [Rate limits](https://raw.githubusercontent.com/api-evangelist/aijia-home-furnishing-products/refs/heads/main/rate-limits/aijia-home-furnishing-products-rate-limits.yml): API rate-limit measurement (zero — no published limits)
+- [Review](https://raw.githubusercontent.com/api-evangelist/aijia-home-furnishing-products/refs/heads/main/review.yml): Contract-discovery review and the reason no contract is registered

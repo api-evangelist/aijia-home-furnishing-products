@@ -1,7 +1,17 @@
 aid: aijia-home-furnishing-products
 name: Aijia Home Furnishing Products
-description: 'Aijia Home Furnishing Products is a company surfaced via the API Evangelist harvest backlog
-  (source: secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Aijia Home Furnishing Products (艾佳生活, operated by 江苏艾佳家居用品有限公司 /
+  Jiangsu Aijia Home Furnishing Products Co., Ltd.) is a Nanjing-based Chinese internet
+  home-furnishing and home-improvement platform, founded in 2015 as a joint venture of
+  Jiangsu Yide Group and Central China (Jianye) Group. It sells a one-stop packaged fit-out
+  for newly delivered apartments — design, hard decoration, soft furnishing, construction,
+  acceptance, delivery and after-sales — plus its 全品家 furniture suites, distributed through
+  property-developer partnerships across 25 Chinese provinces and 500-plus residential
+  projects. It raised a RMB 1 billion Series B led by Tiantu Capital in 2018 at a valuation
+  above USD 1 billion and launched Dramatic Reality (DR), an AI design platform, in 2019. Its public surface is a Chinese-language consumer website, a mobile site,
+  a consumer app and a login-only merchant console; it publishes no developer portal, no API
+  reference and no machine-readable API contract.'
+image: https://m.ihomefnt.com/public/img/index/icon_LOGO.png
 url: https://raw.githubusercontent.com/api-evangelist/aijia-home-furnishing-products/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +22,24 @@ created: '2026-09-14'
 modified: '2026-09-14'
 tags:
 - Company
+- Home Furnishing
+- Furniture
+- Interior Design
+- Home Improvement
+- E-Commerce
+- Consumer
+- Real Estate
+- China
+tags_raw:
+- Company
+- Home Furnishing
+- Furniture
+- Interior Design
+- Home Improvement
+- E-Commerce
+- Consumer
+- Real Estate
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +47,47 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aijia-home-furnishing-products-domain-security.yml
+- type: LLMsTxt
+  url: llms/aijia-home-furnishing-products-llms.txt
 - type: Website
+  url: https://www.ihomefnt.com/
+- type: About
+  url: https://www.ihomefnt.com/aboutus/
+- type: X-MobileSite
+  url: https://m.ihomefnt.com/allhome/allhomeindex
+- type: SecondaryMarket
   url: https://www.hiive.com/securities/aijia-home-furnishing-products-stock
+x-enrichment:
+  date: '2026-09-14'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    艾佳生活 (ihomefnt.com) sells packaged apartment fit-outs to Chinese consumers through
+    property-developer partnerships and ships only end-user software — a marketing site, a
+    mobile site, a consumer app and a login-only merchant console (艾佳生活商户服务平台) — with
+    no developer portal, no API reference, no SDK and no published contract anywhere;
+    open./developer./docs.ihomefnt.com do not resolve, there is no GitHub organization, and
+    every /.well-known/ path and /llms.txt on both public hosts returns 404 — the one
+    machine-readable description reachable at all is a framework default on its app back-end
+    host, which describes an internal system on a robots-disallowed host and is therefore not
+    treated here as a published contract (see review.yml).
+  evidence:
+  - url: https://www.ihomefnt.com/
+    status: 200
+  - url: https://www.ihomefnt.com/openapi.json
+    status: 404
+  - url: https://www.ihomefnt.com/llms.txt
+    status: 404
+  - url: https://www.ihomefnt.com/.well-known/agent-card.json
+    status: 404
+  - url: https://m.ihomefnt.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.github.com/orgs/ihomefnt
+    status: 404
+  checked: '2026-09-14'
