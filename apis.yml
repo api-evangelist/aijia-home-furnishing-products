@@ -28,7 +28,7 @@ tags:
 - Home Improvement
 - E-Commerce
 - Consumer
-- Real-Estate
+- Real Estate
 - China
 tags_raw:
 - Company
@@ -40,6 +40,7 @@ tags_raw:
 - Consumer
 - Real Estate
 - China
+- Real-Estate
 apis: []
 maintainers:
 - FN: Kin Lane
