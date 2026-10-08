@@ -48,6 +48,10 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/aijia-home-furnishing-products-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/aijia-home-furnishing-products-rate-limits.yml
 - url: https://www.ihomefnt.com/news/
   type: Blog
 - type: DomainSecurity
