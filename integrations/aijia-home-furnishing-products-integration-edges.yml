@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/aijia-home-furnishing-products/integrations
+- https://n8n.io/integrations/aijia-home-furnishing-products/
+- https://composio.dev/toolkits/aijia-home-furnishing-products
+- https://monid.ai/tools/aijia-home-furnishing-products
+checked:
+- https://composio.dev/toolkits/aijia-home-furnishing-products
+- https://monid.ai/tools/aijia-home-furnishing-products
+- https://n8n.io/integrations/aijia-home-furnishing-products/
+- https://zapier.com/apps/aijia-home-furnishing-products/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
