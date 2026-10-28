@@ -64,23 +64,92 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aijia Home Furnishing Products (艾佳生活, operated by 江苏艾佳家居用品有限公司 / Jiangsu Aijia Home
-Furnishing Products Co., Ltd.) is a Nanjing-based Chinese internet home-furnishing and
-home-improvement platform, founded in 2015 as a joint venture of Jiangsu Yide Group and Central
-China (Jianye) Group. It sells a one-stop packaged fit-out for newly delivered apartments —
-design, hard decoration, soft furnishing, construction, acceptance, delivery and after-sales —
-through partnerships with property developers across 25 Chinese provinces and more than 500
-residential projects. It raised a RMB 1 billion Series B led by Tiantu Capital in 2018 at a
-valuation above USD 1 billion, and launched Dramatic Reality (DR), an AI design platform for
-interior designers, in 2019.
+Aijia Home Furnishing Products (艾佳生活, operated by 江苏艾佳家居用品有限公司 / Jiangsu Aijia Home Furnishing Products Co., Ltd.) is a Nanjing-based Chinese internet home-furnishing and home-improvement platform, founded in 2015 as a joint venture of Jiangsu Yide Group and Central China (Jianye) Group. It sells a one-stop packaged fit-out for newly delivered apartments — design, hard decoration, soft furnishing, construction, acceptance, delivery and after-sales — plus its 全品家 furniture suites, distributed through property-developer partnerships across 25 Chinese provinces and 500-plus residential projects. It raised a RMB 1 billion Series B led by Tiantu Capital in 2018 at a valuation above USD 1 billion and launched Dramatic Reality (DR), an AI design platform, in 2019. Its public surface is a Chinese-language consumer website, a mobile site, a consumer app and a login-only merchant console; it publishes no developer portal, no API reference and no machine-readable API contract.
 
-**No developer program.** The company publishes no developer portal, no API reference, no SDK and
-no machine-readable API contract. See
-[`review.yml`](review.yml) for the contract-discovery record and
-[`well-known/`](well-known/aijia-home-furnishing-products-well-known.yml) for every discovery path
-probed and the status it returned.
+**Areas:** Company · Home Furnishings · Furniture · Interior Design · Home Improvement · E-Commerce · Consumer · Real Estate · China
 
-- Website: https://www.ihomefnt.com/
-- About: https://www.ihomefnt.com/aboutus/
-- Mobile site: https://m.ihomefnt.com/allhome/allhomeindex
-- Secondary-market listing: https://www.hiive.com/securities/aijia-home-furnishing-products-stock
+## Aijia Home Furnishing Products on APIs.io
+
+Everything profiled for Aijia Home Furnishing Products is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aijia-home-furnishing-products/](https://apis.io/providers/aijia-home-furnishing-products/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Aijia Home Furnishing Products Domain Security](https://apis.io/security/aijia-home-furnishing-products/aijia-home-furnishing-products-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Aijia Home Furnishing Products Plans Pricing](https://apis.io/plans/aijia-home-furnishing-products/aijia-home-furnishing-products-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Aijia Home Furnishing Products Rate Limits](https://apis.io/rate-limits/aijia-home-furnishing-products/aijia-home-furnishing-products-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.ihomefnt.com/)
+- [Blog](https://www.ihomefnt.com/news/)
+
+## API Evangelist rating
+
+**Kin Score 4.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aijia-home-furnishing-products/](https://apis.io/providers/aijia-home-furnishing-products/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Aijia Home Furnishing Products: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aijia-home-furnishing-products/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
